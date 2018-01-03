@@ -9,7 +9,7 @@ import org.rabia.tabassum.model.Profile;
 public class Database {
 	
 	private static Map<Long,Message> messages=new HashMap<>();
-	private static Map<Long,Profile> profiles=new HashMap<>();
+	private static Map<String,Profile> profiles=new HashMap<>();
 
 	
 	public static Map<Long,Message> getMessages()
@@ -18,7 +18,7 @@ public class Database {
 		
 	}
 	
-	public static Map<Long,Profile> getProfiles()
+	public static Map<String,Profile> getProfiles()
 	{
 		return profiles;
 		
